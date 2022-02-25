@@ -2,7 +2,7 @@ import psycopg2
 
 def menu():
     print("Menu")
-    print("1- Ingresar Notas")
+    print("1- Calcular IVA ")
     print("2- Consultar base de datos")
     print("3- Borrar base de datos")
     print("4- Salir")
@@ -13,7 +13,7 @@ def operaciones():
     precio = float(input())
 
     preciosiniva = precio / 1.12
-    print("El precio del producto sin IVA es",preciosiniva)
+    print("El precio del producto sin IVA es:",preciosiniva)
     iva = preciosiniva*0.12
     print("El mont de IVA es: ", iva)
     
