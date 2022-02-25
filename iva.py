@@ -13,9 +13,9 @@ def operaciones():
     precio = float(input())
 
     preciosiniva = precio / 1.12
-    print("El precio del producto sin IVA es:",preciosiniva)
+    print("El precio del producto sin IVA es:","{:.2f}".format(preciosiniva))
     iva = preciosiniva*0.12
-    print("El mont de IVA es: ", iva)
+    print("El mont de IVA es: ", "{:.2f}".format(iva))
     
     cursor.execute("INSERT INTO iva(precio,costo,iva) VALUES(%s,%s,%s);",(precio,preciosiniva,iva))
     conexion.commit()
