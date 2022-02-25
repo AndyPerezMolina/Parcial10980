@@ -9,7 +9,7 @@ def menu():
     return()
 
 def operaciones():
-    print("Ingresar Precio del producto")
+    print("Ingresar Numero")
     numero = float(input())
 
     if numero %2 == 0:
